@@ -2,12 +2,27 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 function Home() {
+  // Define the animation variants
+  const textVariant = {
+    hidden: { y: -200, opacity: 0 }, // Starting position: above the viewport
+    visible: { 
+      y: 0, // Final position: original position
+      opacity: 1, // Fade in
+      transition: { 
+        type: 'spring', // Type of animation
+        stiffness: 50, // How stiff the animation feels
+        damping: 10, // How much to dampen the spring effect
+        duration: 1 // Duration of the animation
+      }
+    }
+  };
+
   return (
     <motion.div
       className="flex items-center justify-center h-screen bg-gray-800 text-white"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
+      initial="hidden"
+      animate="visible"
+      variants={textVariant}
     >
       <h1 className="text-4xl">Hello, World!</h1>
     </motion.div>

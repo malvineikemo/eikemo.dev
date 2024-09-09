@@ -31,7 +31,7 @@ function Footer() {
         </div>
 
         <div className="text-gray-500">
-          &copy; {new Date().getFullYear()} Your Website Name. All Rights Reserved.
+          &copy; {new Date().getFullYear()} Eikemo.dev. All Rights Reserved.
         </div>
       </div>
     </footer>

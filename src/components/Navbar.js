@@ -35,6 +35,15 @@ function Navbar() {
         </li>
         <li>
           <NavLink
+            to="/projects"
+            className="hover:text-blue-400"
+            activeClassName="text-blue-500"
+          >
+            Projects
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
             to="/panel"
             className="hover:text-blue-400"
             activeClassName="text-blue-500"

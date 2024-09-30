@@ -24,7 +24,7 @@ function Home() {
       animate="visible"
       variants={textVariant}
     >
-      <h1 className="text-4xl">Hello, world! (Malvin is workin on it...)</h1>
+      <h1 className="text-4xl">Hello, world! (Malvin is workin on it...) - Contact me at: 'malvin.se.ei@gmail.com' for questions</h1>
     </motion.div>
   );
 }
